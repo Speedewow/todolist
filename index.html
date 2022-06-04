@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <section class="content">
+            <form class="input-container">
+                <input type="text" class="input" />
+                <button class="button add-button" type="submit">a</button>
+            </form>
+            <ul class="horizontal-list">
+                <template class="task-template">
+                <li class="element">
+                    <input type="text" class="task" value="">
+                    <button class="button edit-button">e</button>
+                    <button class="button complete-button">c</button>
+                    <button class="button delete-button">d</button>
+                </li>
+            </template>
+
+            </ul>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./components/Form.js" type="module"></script>
+    <script src="./components/Section.js" type="module"></script>
+    <script src="./components/Task.js" type="module"></script>
+</body>
+
+</html>
