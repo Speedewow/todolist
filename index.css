@@ -11,31 +11,63 @@
     justify-content: center;
     margin: 0, auto;
     padding: 100px;
-    background-color: rgb(237, 128, 134);
+    background-color: #F0D9EC;
+}
+
+.input-container {
+    outline: 1px solid rgb(122, 122, 236);
+    border-radius: 3px;
+    display: flex;
+    background-color: rgb(243, 186, 189);
 }
 
 .button {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border: none;
+    background-color: rgb(243, 186, 189);
 }
 
-.element,
-.input-container {
+.button-container {
     display: flex;
     flex-direction: row;
     gap: 0px;
-    outline: 2px solid rgb(122, 122, 236);
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.element {
+    max-width: 250px;
+    width: 100%;
+    outline: 1px solid rgb(122, 122, 236);
     border-radius: 3px;
+    position: relative;
+    list-style: none;
+    background-color: rgb(243, 186, 189);
 }
 
 .task,
 .input {
-    border: none
+    border: none;
+    color: rgb(122, 122, 236);
+    background-color: rgb(243, 186, 189);
+}
+
+.task:focus,
+.input:focus {
+    border: none;
+    outline: none;
 }
 
 .horizontal-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0;
+}
+
+.input_complete {
+    text-decoration: underline;
+    background-color: gray;
 }

@@ -35,7 +35,7 @@ class Task {
     }
 
     _completeTask() {
-
+        this._element.classList.toggle("input_confrim")
     }
 
     _editTask() {
@@ -86,6 +86,7 @@ class Form {
 const container = document.querySelector(".horizontal-list")
 const template = document.querySelector(".task-template")
 const form = document.querySelector(".input-container")
+
 
 const renderTask = new Section(() => {
     renderTask.addItem()
